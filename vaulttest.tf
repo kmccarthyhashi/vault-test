@@ -10,13 +10,13 @@ module "vault-ent" {
   # prefix for tagging/naming AWS resources
   resource_name_prefix = "kelly"
   # VPC ID you wish to deploy into
-  vpc_id = "vpc-04fd8c2643ffee7b8"
+  vpc_id = "vpc-0bc57b6dca4f5a29c"
   # private subnet IDs are required and allow you to specify which
   # subnets you will deploy your Vault nodes into
   private_subnet_ids = [
-    "subnet-02ae3fe477aa6f17f",
-    "subnet-098137a33154ce023",
-    "subnet-0aa9b226c10170859",
+    "subnet-0db7d37d1f7e1f058",
+    "subnet-0e53775458316349d",
+    "subnet-021530ac9851bb541",
   ]
   # AWS Secrets Manager ARN where TLS certs are stored
   secrets_manager_arn = "arn:aws::secretsmanager:us-east-1:398651188038:secret:kelly--tls-secret-ag20S0"
