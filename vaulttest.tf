@@ -19,11 +19,11 @@ module "vault-ent" {
     "subnet-021530ac9851bb541",
   ]
   # AWS Secrets Manager ARN where TLS certs are stored
-  secrets_manager_arn = "arn:aws::secretsmanager:us-east-1:398651188038:secret:kelly--tls-secret-ag20S0"
+  secrets_manager_arn = "arn:aws::secretsmanager:us-east-1:446881658643:secret:kelly--tls-secret-v8faea"
   # The shared DNS SAN of the TLS certs being used
   leader_tls_servername = "vault.server.com"
   # The cert ARN to be used on the Vault LB listener
-  lb_certificate_arn = "arn:aws:acm:us-east-1:398651188038:certificate/ed01903a-162f-4091-9032-83bbfeaecd34"
+  lb_certificate_arn = "arn:aws:acm:us-east-1:446881658643:certificate/7f7ba15a-6da9-4834-9708-0d1f254483ad"
 
   vault_license_filepath = "/home/test/vault.hclic"
 }
